@@ -9,6 +9,6 @@ class Hello extends React.Component {
 }
 
 ReactDOM.render(
-  <Hello />,
+  <Hello name="John" />,
   document.getElementById('root')
 )

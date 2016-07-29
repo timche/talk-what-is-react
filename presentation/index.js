@@ -98,15 +98,13 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Layout>
-              <Appear>
-                <Fill>
-                  <Heading size={4} textColor="white">ES6/JSX</Heading>
-                  <CodePane
-                    lang="jsx"
-                    source={require('raw!../assets/hello-world-jsx.example')}
-                  />
-                </Fill>
-              </Appear>
+              <Fill>
+                <Heading size={4} textColor="white">ES6/JSX</Heading>
+                <CodePane
+                  lang="jsx"
+                  source={require('raw!../assets/hello-world-jsx.example')}
+                />
+              </Fill>
               <Appear>
                 <Fill>
                   <Heading size={4} textColor="white">ES6/JS</Heading>
@@ -118,7 +116,7 @@ export default class Presentation extends React.Component {
               </Appear>
               <Appear>
                 <Fill>
-                  <Heading size={4} textColor="white">ES5</Heading>
+                  <Heading size={4} textColor="white">ES5/JS</Heading>
                   <CodePane
                     lang="jsx"
                     source={require('raw!../assets/hello-world-es5.example')}
@@ -133,7 +131,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Heading>What problem does React now solves? 🤔</Heading>
+            <Heading>Which problem does React now solve? 🤔</Heading>
           </Slide>
 
           <Slide>
@@ -171,7 +169,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Heading>This is what React solves ✨<br /><br />Virtual DOM FTW!!1111 🚀</Heading>
+            <Heading>This is what React is and solves ✨<br /><br />Virtual DOM FTW!!1111 🚀</Heading>
           </Slide>
         </Deck>
       </Spectacle>

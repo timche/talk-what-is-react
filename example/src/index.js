@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Hello extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -21,19 +21,25 @@ class Hello extends React.Component {
           {this.state.data.map((name, i) => (
             <li
               key={i}
-              onClick={() => this.setState({ data: this.state.data.filter(n => n !== name) })}
+              onClick={() => this.setState({
+                data: this.state.data.filter(n => n !== name)
+              })}
             >
-              Hello {name}!
+              {name}!
             </li>
           ))}
         </ul>
         <input
           value={this.state.value}
-          onChange={(event) => this.setState({ value: event.target.value })}
+          onChange={event => this.setState({
+            value: event.target.value
+          })}
         />
         <button
-          type="button"
-          onClick={() => this.setState({ data: this.state.data.concat(this.state.value), value: '' })}
+          onClick={() => this.setState({
+            data: this.state.data.concat(this.state.value),
+            value: ''
+          })}
         >
           Add
         </button>
@@ -43,6 +49,6 @@ class Hello extends React.Component {
 }
 
 ReactDOM.render(
-  <Hello />,
+  <App />,
   document.getElementById('root')
 )

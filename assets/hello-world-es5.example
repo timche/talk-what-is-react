@@ -3,7 +3,7 @@ var Hello = React.createClass({
 
   render: function render() {
     return React.createElement(
-      'div',
+      'h1',
       null,
       'Hello ',
       this.props.name
@@ -14,7 +14,7 @@ var Hello = React.createClass({
 ReactDOM.render(
   React.createElement(
     Hello,
-    { name: 'HannoverJS' }
+    { name: 'John' }
   ),
   document.getElementById('root')
 )
